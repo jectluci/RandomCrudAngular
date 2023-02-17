@@ -1,0 +1,12 @@
+{
+  "tsserver.enable": true,
+  "angular.trace.server": "messages",
+  "angular.suggest.includeCompletionsWithSnippetText": true,
+  "angular.suggest.includeAutomaticOptionalChainCompletions": true,
+  "angular.log": "normal",
+  "angular.view-engine": true,
+  "angular.enable-strict-mode-prompt": true,
+  "tabnine.enablePreselect": true,
+  "tabnine.limit": 1,
+  "coc.preferences.formatOnSave": true
+}

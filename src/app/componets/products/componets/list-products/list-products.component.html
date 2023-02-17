@@ -1,0 +1,31 @@
+<div class="container mx-auto">
+  <div class="flex flex-row justify-center items-center">
+    <h2>Products</h2>
+  </div>
+  <app-spinner></app-spinner>
+  <div
+    class="flex flex-row flex-wrap gap-4 justify-center items-center"
+    *ngIf="products; else noProducts"
+  >
+    <app-product
+      *ngFor="let product of productsPagination"
+      [product]="product"
+    ></app-product>
+  </div>
+
+  <mat-paginator
+    (page)="handlePageEvent($event)"
+    [length]="length"
+    [pageSize]="pageSize"
+    [showFirstLastButtons]="showFirstLastButtons"
+    [pageSizeOptions]="[5, 10, 25]"
+    [pageIndex]="pageIndex"
+    aria-label="Select page"
+  >
+  </mat-paginator>
+  <ng-template #noProducts>
+    <div class="flex items-center justify-center">
+      <h3>No Products</h3>
+    </div>
+  </ng-template>
+</div>

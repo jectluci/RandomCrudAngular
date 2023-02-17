@@ -31,6 +31,7 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/purple-green.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -99,6 +100,7 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/purple-green.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -107,5 +109,8 @@
       }
     }
   },
-  "defaultProject": "random-project"
+  "defaultProject": "random-project",
+  "cli": {
+    "analytics": "1fa3c00a-8a1d-4df7-9c8c-6b4e685419c0"
+  }
 }

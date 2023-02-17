@@ -1,0 +1,21 @@
+<button
+  (click)="showModal()"
+  class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+>
+  <img
+    class="object-cover rounded-t-lg md:h-60 md:w-60 md:rounded-none md:rounded-l-lg"
+    src="{{ category.image }}"
+    alt=""
+  />
+  <div class="flex flex-col justify-between items-center p-4 leading-normal">
+    <h5
+      class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+    >
+      {{ category.name }}
+    </h5>
+  </div>
+</button>
+<app-modal-detil-categorie
+  [showButton]="false"
+  [showModal]="showModalCategory"
+></app-modal-detil-categorie>
